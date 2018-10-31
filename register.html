@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>REGISTRATIO RESULT</title>
+    </head>
+    <body>
+        <div><h1> FILL OUT THE REGISTRATION FORM FUCKERS!!!!!!!!!!!!!!!!!!!!</h1>
+            <form action="hello.php" method="POST">
+            <p> EMAIL ADDRESS: <input type="text" size="30" name="email"/></p>
+            <p> PASSWORD: <input type="password" size="30" name="password"/></p>
+            <p> CONFIRM PASSWORD: <input type="password" size="30" name="confirm"/></p>
+            <p> Date of Birth:
+                <select name="month"> 
+                    <option value="">month</option>
+                    <option value="1">jan</option>
+                    <option value="2">feb</option>
+                <option value="3">march</option>
+                                    <option value="4">april</option>
+                                    <option value="5">may</option>
+                                    <option value="6">june</option>
+                                    <option value="7">july</option>
+                                    <option value="8">aug</option>
+                                    <option value="9">sept</option>
+                                    <option value="10">oct</option>
+                                    <option value="11">nov</option>
+                                    <option value="12">dec</option>
+                </select>
+                <select name="day">
+                    <option value="">day</option>
+                                        <?php 
+                                        for ($d=1; $d<=31; $d++){
+                                            echo "<option value=\"$d\">$d</option>\n";
+                                        }
+                                      
+                                       ?>
+                 </select>
+                 <select name="year">
+                    <option value="">year</option>
+                                        <?php 
+                                        for ($i=1999; $i<=2018; $i++){
+                                            echo "<option value=\"$i\">$i</option>\n";
+                                        }
+                                      
+                                       ?>
+                 </select>
+                
+            <p> Favorite color:
+                <select name="color">
+                    <option value=""> Pick one</option>
+                    <option value="red"> red</option>
+                    <option value="blue"> blue</option>              
+      </select></p> 
+              <input type="submit" name="submit" value="Register"/>
+            </form>
+</div>
+</div>
+</div>
+    </body>
+</html>
